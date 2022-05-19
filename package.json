@@ -1,0 +1,28 @@
+{
+  "name": "@rrox-plugins/coffee-train",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "cofefe",
+  "rrox": {
+    "controller": "dist/controller/controller.js",
+    "renderer": "dist/renderer/renderer.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://rrox-registry.tom90.nl"
+  },
+  "scripts": {
+    "build": "rrox clean && rrox build",
+    "prepack": "yarn build",
+    "start": "yarn dev",
+    "dev": "rrox clean && rrox start"
+  },
+  "dependencies": {
+    "@rrox/api": "1.0.3"
+  },
+  "devDependencies": {
+    "@rrox/plugin": "1.0.1"
+  }
+}
